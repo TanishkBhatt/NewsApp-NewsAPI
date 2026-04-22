@@ -14,7 +14,6 @@ def date_formatter(date: str) -> str:
         )
 
 
-@st.cache_data
 def get_news(category: str) -> list[dict]:
     res = requests.get(f"https://newsapi.org/v2/top-headlines?country=us&category={category}&apiKey={st.secrets.API_KEY}")
 
