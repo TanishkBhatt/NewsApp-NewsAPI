@@ -57,7 +57,7 @@ def display_news(news: dict[str, str]):
                 if news["image"]:
                     st.image(news["image"])
                 else:
-                    st.warning("No IMAGE FOR THIS NEWS!")
+                    st.warning("NO IMAGE FOR THIS NEWS!")
                       
     st.markdown("")
     st.markdown("")
