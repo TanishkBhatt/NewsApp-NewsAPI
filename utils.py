@@ -54,7 +54,10 @@ def display_news(news: dict[str, str]):
                 st.write(news["content"])
                 st.link_button("__READ FULL CONTENT__", news["content_url"])
             with col2:
-                st.image(news["image"])
-
+                if news["image"]:
+                    st.image(news["image"])
+                else:
+                    st.warning("No IMAGE FOR THIS NEWS!")
+                      
     st.markdown("")
     st.markdown("")
